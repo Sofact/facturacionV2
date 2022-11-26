@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TransporteComponent } from './facturar/pages/transporte/transporte.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
@@ -17,7 +18,8 @@ import {MenuItem} from 'primeng/api';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MenubarModule
+    MenubarModule,
+    HttpClientModule
     
   ],exports: [
     MenubarModule
